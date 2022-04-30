@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="stile.css"> 
+  <meta charset="utf-8">
+  <title>Identificazione dell'utente</title>
+</head>
+<body style="background-image: url('dogg.jpg'); vertical-align: middle; text-align:center;">
+
+  <h2>Accesso all'area riservata</h2>
+  <form action="controllalogin.php" method="post">
+  <p class="myP">
+  Email: <input type="text" name="email" size="40" required/>
+  Password: <input type="password" name="password" size="40" required/> <br>
+  </p>
+  <p class="myP">
+  <input type="submit" name="invio" value="Login"/>
+  <input type="reset" name="cancella" value="Annulla"/>
+  </p>
+  </form>
+  <form method="get" action="/login/datiutente.html">
+    <p class="myP">
+    Non hai ancora un account? <button type="submit">Registrati</button>
+    </p>
+</form>
+</body>
+</html>
